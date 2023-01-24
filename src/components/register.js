@@ -72,3 +72,4 @@ formRegister.appendChild(btnRegistrarme);
 
   return sectionRegister;
 };
+/* hola gina */
