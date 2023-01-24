@@ -1,5 +1,6 @@
 /* eslint-disable import/no-cycle */
 import { navigateRoutes } from '../main.js';
+import { registerUser } from '../lib/configFirebase.js';
 /* PAGINA PARA REGISTRARSE CON DATOS */
 export const register = () => {
   const sectionRegister = document.createElement('section'); /* contenedor de todo lo que aparece en register */
