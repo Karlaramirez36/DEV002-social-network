@@ -25,13 +25,13 @@ sectionRegister.appendChild(divRegisterText);
 divRegisterText.appendChild(textSignIn);
 sectionRegister.appendChild(divRegisterForm);
 divRegisterForm.appendChild(formRegister);
-formRegister.appendChild(labelName)
+formRegister.appendChild(labelName);
 formRegister.appendChild(name);
-formRegister.appendChild(labelLastName)
+formRegister.appendChild(labelLastName);
 formRegister.appendChild(lastName);
-formRegister.appendChild(labelEmail)
+formRegister.appendChild(labelEmail);
 formRegister.appendChild(email);
-formRegister.appendChild(labelPassword)
+formRegister.appendChild(labelPassword);
 formRegister.appendChild(password);
 formRegister.appendChild(btnRegistrarme);
 
