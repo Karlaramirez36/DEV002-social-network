@@ -1,5 +1,6 @@
 /* eslint-disable import/no-cycle */
 import { navigateRoutes } from '../main.js';
+
 /* PAGINA PARA REGISTRARSE CON DATOS */
 export const register = () => {
   const sectionRegister = document.createElement('section');
@@ -20,20 +21,20 @@ export const register = () => {
 
   /* appen */
 
-sectionRegister.appendChild(btnHome);
-sectionRegister.appendChild(divRegisterText);
-divRegisterText.appendChild(textSignIn);
-sectionRegister.appendChild(divRegisterForm);
-divRegisterForm.appendChild(formRegister);
-formRegister.appendChild(labelName)
-formRegister.appendChild(name);
-formRegister.appendChild(labelLastName)
-formRegister.appendChild(lastName);
-formRegister.appendChild(labelEmail)
-formRegister.appendChild(email);
-formRegister.appendChild(labelPassword)
-formRegister.appendChild(password);
-formRegister.appendChild(btnRegistrarme);
+  sectionRegister.appendChild(btnHome);
+  sectionRegister.appendChild(divRegisterText);
+  divRegisterText.appendChild(textSignIn);
+  sectionRegister.appendChild(divRegisterForm);
+  divRegisterForm.appendChild(formRegister);
+  formRegister.appendChild(labelName);
+  formRegister.appendChild(name);
+  formRegister.appendChild(labelLastName);
+  formRegister.appendChild(lastName);
+  formRegister.appendChild(labelEmail);
+  formRegister.appendChild(email);
+  formRegister.appendChild(labelPassword);
+  formRegister.appendChild(password);
+  formRegister.appendChild(btnRegistrarme);
 
   /* atribute */
   sectionRegister.setAttribute('class', 'sectionRegister');

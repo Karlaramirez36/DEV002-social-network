@@ -1,7 +1,9 @@
 /* eslint-disable import/no-cycle */
 import { navigateRoutes } from '../main.js';
 /* HOME DE INICIO DE SESION DE LA APP */
+
 export const home = () => {
+  const sectionHome = document.createElement('section');
   const divHome = document.createElement('div'); /* div que contiene el bloque de home */
 
   const btnRegister = document.createElement('button'); /* boton de registro */
