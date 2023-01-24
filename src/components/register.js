@@ -1,13 +1,12 @@
 /* eslint-disable import/no-cycle */
 import { navigateRoutes } from '../main.js';
-
 /* PAGINA PARA REGISTRARSE CON DATOS */
 export const register = () => {
-  const sectionRegister = document.createElement('section');
-  const divRegisterText = document.createElement('div');
+  const sectionRegister = document.createElement('section'); /* contenedor de todo lo que aparece en register */
+  const divRegisterText = document.createElement('div'); /* texto del contenedor */
   const textSignIn = document.createElement('p');
-  const divRegisterForm = document.createElement('div');
-  const formRegister = document.createElement('form');
+  const divRegisterForm = document.createElement('div'); /* contenedor donde esta en formulario */
+  const formRegister = document.createElement('form'); /* formulario */
   const labelName = document.createElement('label');
   const name = document.createElement('input');
   const labelLastName = document.createElement('label');
@@ -67,7 +66,12 @@ export const register = () => {
 
   /* function */
 
-  btnRegistrarme.addEventListener('click', () => navigateRoutes('/login'));
+  btnRegistrarme.addEventListener('click', () => {
+    const emailUser = email.value;
+    const passwordUser = password.value;
+    registerUser(emailUser, passwordUser);
+    navigateRoutes('/login');
+  });
 
   btnHome.addEventListener('click', () => navigateRoutes('/')); /* pathname '/' */
 
