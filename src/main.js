@@ -2,6 +2,7 @@ import { login } from './components/login.js';
 import { home } from './components/home.js';
 import { register } from './components/register.js';
 
+
 const root = document.getElementById('root') /* contenido de html */
 
 
