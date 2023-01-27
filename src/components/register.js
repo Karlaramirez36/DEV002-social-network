@@ -76,15 +76,15 @@ export const register = () => {
   labelPassword.setAttribute('class', 'textForm');
 
   /* function */
-
+  /* btn de enviar formulario de registro */
   btnRegistrarme.addEventListener('click', () => {
     const emailUser = email.value;
     const passwordUser = password.value;
     registerUser(emailUser, passwordUser);
-    navigateRoutes('/login');
+    navigateRoutes('/wallApp');
   });
 
-  btnHome.addEventListener('click', () => navigateRoutes('/')); /* pathname '/' */
+  btnHome.addEventListener('click', () => navigateRoutes('/wallApp')); /* pathname '/' */
 
   return sectionRegister;
 };
